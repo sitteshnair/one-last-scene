@@ -6,7 +6,7 @@
 <style>
 
 body{
-    background-color:#0b0b0b;
+    background-color:#f5e6d3;
     font-family: Arial, sans-serif;
     display:flex;
     justify-content:center;
@@ -14,27 +14,41 @@ body{
     height:100vh;
 }
 
+/* FADE IN ANIMATION */
+@keyframes fadeInCard{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
 .card{
-    background:#f5e6d3; /* beige aesthetic */
+    background:#0f0f0f;
     padding:40px;
     border-radius:18px;
     width:420px;
     text-align:center;
-    box-shadow:0px 0px 20px rgba(0,0,0,0.4);
+    box-shadow:0px 0px 25px rgba(0,0,0,0.4);
+
+    animation:fadeInCard 1.2s ease;
 }
 
 .photo{
-    width:240px;       /* 1.2 : 1 ratio */
-    height:200px;
-    border-radius:20px; /* curved edges */
+    width:200px;
+    height:240px;
+    border-radius:20px;
     object-fit:cover;
-    border:4px solid black;
+    border:4px solid #d4af37;
 }
 
 .name{
     font-size:28px;
     margin-top:18px;
-    color:#2b2b2b; /* darker text */
+    color:#f5e6d3;
     font-weight:bold;
 }
 
@@ -42,7 +56,7 @@ body{
     margin-top:18px;
     font-size:16px;
     line-height:1.6;
-    color:#3a3a3a; /* darker text */
+    color:#e6d3a3;
 }
 
 </style>
