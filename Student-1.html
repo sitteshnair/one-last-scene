@@ -2,9 +2,9 @@
 <html>
 <head>
 <title>Farewell Message</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
 
-<!-- MOBILE VIEWPORT ADDED -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -15,12 +15,11 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh; /* CHANGED FROM height */
+    min-height:100vh;
     margin:0;
-    padding:20px; /* ADDED FOR PHONE SPACING */
+    padding:20px;
 }
 
-/* Fade-in animation */
 @keyframes fadeInCard{
     from{
         opacity:0;
@@ -36,41 +35,42 @@ body{
     background:#3b302a;
     padding:40px;
     border-radius:18px;
-    width:90%; /* CHANGED FROM 420px */
-    max-width:420px; /* ADDED */
+    width:90%;
+    max-width:420px;
     text-align:center;
     box-shadow:0px 10px 30px rgba(0,0,0,0.2);
     animation:fadeInCard 1.2s ease;
 }
 
 .photo{
-    width:60%; /* CHANGED FROM 200px */
+    width:60%;
     max-width:200px;
     height:auto;
-    aspect-ratio:1/1.2; /* MAINTAINS 1:1.2 RATIO */
+    aspect-ratio:1/1.2;
     border-radius:20px;
     object-fit:cover;
     border:4px solid #c7a17a;
 }
 
-.name{
+/* QUOTE STYLE */
+.quote{
     font-family:'Cinzel', serif;
-    font-size:28px;
+    font-size:24px;
     margin-top:18px;
     color:#f5f0e8;
-    font-weight:bold;
+    font-style:italic;
 }
 
+/* MESSAGE STYLE */
 .message{
     font-family:'Cormorant Garamond', serif;
     margin-top:18px;
-    font-size:16px;
+    font-size:17px;
     line-height:1.6;
     color:#e2d5c6;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -79,11 +79,12 @@ body{
 
 <img src="studentphoto.jpg" class="photo">
 
-<div class="name">Student Name</div>
+<div class="quote">
+"Every great story deserves a memorable final scene."
+</div>
 
 <div class="message">
-Thank you for the memories, the laughs, and the moments that made school unforgettable.
-Wishing you all the best for the amazing journey ahead!
+(Name), join us for an evening dedicated to celebrating your journey and the legacy you leave behind.
 </div>
 
 </div>
